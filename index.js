@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
   });
 });
 
-// Iniciar el servidor
-app.listen(port, () => {
+// Iniciar el servidor en 0.0.0.0
+app.listen(port, '0.0.0.0', () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
 });
